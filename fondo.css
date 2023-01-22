@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 20s ease-in-out infinite alternate;
+    background-image: linear-gradient(-20deg,
+            rgb(68, 62, 71) 50%,
+            rgb(30, 19, 34) 50%);
+    bottom: 0;
+    left: -100%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 8s;
+}
+
+.bg3 {
+    animation-duration: 10s;
+}
+
+.content {
+    background-color: rgba(230, 213, 241, 0.8);
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 3rem;
+    position: sticky;
+    text-align: center;
+    top: 40rem;
+    width: 48rem;
+    transform: translate(35%, 45%);
+    float: left;
+
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+/* SIDENAV */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(37, 35, 40);
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: fixed;
+    float: left;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.links {
+    position: fixed;
+    top: 38%;
+}
+
+/* SIDENAV PARTE SUPERIOR TEXTO */
+
+.dtcuadro {
+    background-color: #978aa5;
+    height: 6rem;
+}
+
+.dt {
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    margin-left: 29%;
+}
+
+.nombre {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-left: 20%;
+    margin-top: -25%;
+}
