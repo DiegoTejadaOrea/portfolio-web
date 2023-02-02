@@ -37,6 +37,10 @@ body {
     width: 48rem;
     transform: translate(35%, 45%);
     float: left;
+    /*aliiar el elemtno verticalemnte en la pantalla*/
+    margin: 0 auto;
+    /*alinear el elemento horizontalmente en la pantalla*/
+
 
 }
 
